@@ -1,0 +1,287 @@
+<!--
+  Name: Daria Pinegin
+  Course: Software Development 20S
+  Teacher: Scott Hardman
+  School: Pembina Trails Early College
+  Date Last Modified: December 18th, 2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treaty One</title>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+    <!--
+      An internal stylesheet to style specific elements that are found on this webpage.
+    -->
+    <style>
+      /* 
+        The following styles the id called "first-image" to:
+        - For the element to be placed on the left side, allowing other elements to wrap aroudn it.
+        - To have a width of 50% of the element's container (here being <figure>).
+        - To have a margin (space around the element's border) at the top of the element 
+          to be 50 pixels. 
+      */
+      #first-image {
+        float: left;
+        width: 50%;
+        margin-top: 50px;
+      }
+      /* 
+        The following styles the heading <h2> on this page to be aligned 
+        to the center of the web-page.
+      */
+      h2 {
+        text-align: center;
+      }
+      /* 
+        The following styles the element with an id called "front-text" to: 
+        - Display as inline block, meaning it will be displayed beside other elements.
+      */
+      #front-text {
+        display: inline-block;
+        width: 40%;
+      }
+      /* 
+        The following styles all the span elements to:
+        - To have a font-weight (the thickness of the font's strokes/lines) of bold (value of 700).
+        - To have the font size of 2.6 times the root element's font size.
+        - To have an underline under the element.
+        - To have the font color of #001117, which is a dark-grey and looks like black. 
+      */
+      span {
+        font-weight: bold;
+        font-size: 2.6rem;
+        text-decoration: underline;
+        color: #001117;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      The header of the webpage. Contains the main heading written using <h1>, and the navigation
+      menu written using unordered lists.
+    -->
+    <header>
+      <h1>The Numbered Treaties of Canada</h1>
+      <!--
+        The navigation menu contained in the <nav> sematic tag.
+
+        The <li> of the unordered list are styled using a class "nav-link" that is in the external
+        stylesheet, because the navigation menu is something that will be seen on all webpages 
+        and should stay in consistent style throught any webpage. 
+        
+        The "placeholders" are used for future webpages that are not created yet. 
+      -->
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-link">Home Page</a></li>
+          <li>
+            <a href="terms-of-treaty-one.html" class="nav-link">
+              Terms and Promises
+            </a>
+          </li>
+          <li><a href="#" class="nav-link">Placeholder</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--
+      The <main> sematic tag used to contain all the main content of the website.
+    -->
+    <main>
+      <!--
+        An image to attract the user's attention with a acorresponding figcaption. 
+        Image has alt text to describe what the image is about to improve accessibility. 
+      -->
+      <figure id="first-image">
+        <img
+          src="images/first-nations-traditional-clothing.jpg"
+          width="100%"
+          height="20%"
+          alt="A photo of three men dressed in traditional Swan Lake First Nation's clothes.
+            There is a man at the front, a chief, and the other two other men are behind him. 
+            The man at the front is a chief of the tribe and waves long white feathers.
+            All wear outfits in orange, green, yellow and red. Their head sare adorned in 
+            bright head-dresses, made of colorful feathers and colorful strings.  
+            Photo Credit: Sault Online." />
+        <figcaption>
+          <p>
+            <b>Fig.1</b> Members of Swan Lake First Nation, dressed in their
+            traditional attire during a ce;ebration. Photo credit: Sault Online.
+          </p>
+        </figcaption>
+      </figure>
+
+      <br />
+      <br />
+      <br />
+      <br />
+
+      <!--
+        The name of the Treaty written using <h2> tags. 
+      -->
+      <h2>Treaty One</h2>
+      <!--
+        A section that apperas beside the previous image, containing some background information
+        about teh treaty. 
+      -->
+      <section id="front-text">
+        <p>
+          Treaty One was established between the Imperial Crown of Great Britain
+          and Ireland and the First Nations of the area.
+        </p>
+        <p>
+          Treaty one was negotiated and entered in August 1871, in Lower Fort
+          Garry. The Treaty making process was set down
+          <span>during the Royal Proclamation of 1763</span>.
+        </p>
+      </section>
+
+      <!--
+        Each information paragraph is contained inside a <section>. 
+        The <section> is styled in the external stylesheet to make it consistent 
+        in every webpage that it is used in.
+        
+        Each section of information contains a title written using <h3> tags and
+        the "body" of the information written using <section> tags.
+      -->
+      <section>
+        <h3>Indigenous Communities that signed the Treaty</h3>
+        <p>
+          The First Nation Communities that signed Treaty One are: Peguis First
+          Nation, Sagkeeng First Nation, Brokenhead Ojibway Nation, Roseau River
+          Anishinaabe First Nation, Long Plain First Nation, Sandy Bay Ojibway
+          First Nation and Swan Lake First Nation.
+        </p>
+      </section>
+
+      <br />
+      <!--
+        Two images of maps as of client's request.
+
+        Each image is contained in the <figure> sematic tag with a <figcaption> inside it.
+        Each image has alt text to describe what the image is about to improve accessibility. 
+      -->
+      <figure>
+        <img
+          src="images/treaty-one.jpg"
+          width="100%"
+          height="10%"
+          alt="A map of the bottom of Manitoba. The map showcases the borders of Treaty One and Treaty Two.
+            The treaty one borders also display the traditional lands of the Anishinaabe, Cree and 
+            Dakota peoples. In addition, it is important to recognize that Treaty One was 
+            signed on the homeland of the Metis nation. Photo Credit: Canadian Geographic." />
+        <figcaption>
+          <p>
+            <b>Fig.2</b> The map showcases the borders of Treaty One and Treaty
+            Two. The treaty one borders also display the traditional lands of
+            the Anishinaabe, Cree and Dakota peoples. In addition, it is
+            important to recognize that Treaty One was signed on the homeland of
+            the Metis nation. Important current land-marks such as cities are
+            also marked on the map.
+          </p>
+        </figcaption>
+      </figure>
+
+      <figure>
+        <img
+          src="images/canada-treaty-map.jpg"
+          width="100%"
+          height="10%"
+          alt="A map of Canada with the signed treaties colored. Treaty one is colored in blue,
+            and is located at the bottom of the province of Manitoba, right by the border. 
+            Photo Credit: Wikipedia." />
+
+        <figcaption>
+          <p>
+            <b>Fig.3</b> A map Canada displaying the numbered treaties. Treaty
+            one is colored in blue, and is located at the bottom of Manitoba,
+            right by the border with the United States.
+          </p>
+        </figcaption>
+      </figure>
+
+      <section>
+        <h3>Historical Significance</h3>
+        <p>
+          Treaty One was the first signed treaty created in Canada. It is also
+          <span>the first numbered treaty</span>. What makes Treaty One
+          different from other Treaties is the fact that both Treaty One and
+          Treaty Two had fewer clauses than the treaties that would follow.
+        </p>
+      </section>
+
+      <section>
+        <h3>The Historic Terms of the Treaty</h3>
+        <p>
+          The treaty
+          <span>
+            laid out the boundaries of where the reserves would be for both
+            settlers and Indigenous Peoples.
+          </span>
+          Promises were made for schools too be built in each community, and an
+          annuity of $3-$5 for each person registered under the Indian Act. In
+          addition, items such as twine, ploughs, boards and oxen for some
+          elected Chiefs, headmen and councilors.
+        </p>
+      </section>
+
+      <section>
+        <h3>Implementation of the Treaty in Current Time</h3>
+        <p>
+          Treaty One establishes clearly defined land ownership and
+          jurisdiction, and
+          <span>
+            foster a new relationship based on mutual respect, trust and
+            understanding.
+          </span>
+          In addition, they provide guidelines on how Europeans can use the
+          traditional land that Indigenous Peoples have occupied. They also
+          provide documents with Indigenous rights as written in the treaties.
+        </p>
+      </section>
+    </main>
+
+    <!--
+      The footer of the website containing source information and copyright information.
+      The source information is contained in a <section> tag. 
+      The source information is styled using a "source-link" class that is styled
+      in the external stylesheet.
+     -->
+    <footer>
+      <section>
+        <h3>Sources:</h3>
+        <ul>
+          <li>
+            <a href="https://treaty1.ca/" target="blank" class="source-link">
+              Treaty One Website
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.rcaanc-cirnac.gc.ca/eng/1360948213124/1544620003549"
+              target="blank"
+              class="source-link">
+                Government of Canada Treaty One Webpage
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://en.wikipedia.org/wiki/Treaty_1"
+              target="blank"
+              class="source-link">
+                Wikipedia Treaty One Web-Page
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <br />
+
+      <p>&#169; 2022 Daria P</p>
+    </footer>
+  </body>
+</html>

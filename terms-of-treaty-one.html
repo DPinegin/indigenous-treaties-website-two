@@ -1,0 +1,193 @@
+<!--
+  Name: Daria Pinegin
+  Course: Software Development 20S
+  Teacher: Scott Hardman
+  School: Pembina Trails Early College
+  Date Last Modified: December 18th, 2022
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Terms of Treaty One</title>
+    <link rel="stylesheet" href="stylesheets/main.css" />
+  </head>
+  <body>
+    <header>
+      <!--
+        The header of the webpage. Contains the main heading written using <h1>, and the navigation
+        menu written using unordered lists.
+      -->
+      <h1>The Numbered Treaties of Canada</h1>
+      <br />
+      <!--
+        The navigation menu contained in the <nav> sematic tag.
+
+        The <li> of the unordered list are styled using a class "nav-link" that is in the external
+        stylesheet, because the navigation menu is something that will be seen on all webpages 
+        and should stay in consistent style throught any webpage. 
+        
+        The "placeholders" are used for future webpages that are not created yet. 
+      -->
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-link">Home Page</a></li>
+          <li>
+            <a href="terms-of-treaty-one.html" class="nav-link">
+              Terms and Promises
+            </a>
+          </li>
+          <li><a href="#" class="nav-link">Placeholder</a></li>
+        </ul>
+      </nav>
+      <br />
+    </header>
+
+    <!--
+      The <main> sematic tag used to contain all the main content of the website.
+    -->
+    <main>
+      <!--
+        The name of the Treaty written using <h2> tags. 
+      -->
+      <h2>Treaty One</h2>
+
+      <br />
+
+      <!--
+        Each information paragraph is contained inside a <section>. 
+        The <section> is styled in the external stylesheet to make it consistent 
+        in every webpage that it is used in.
+        
+        Each section of information contains a title written using <h3> tags and
+        the "body" of the information written using <section> tags.
+
+        Most sections also contain an unordered list that lists different promises.
+        The list items in the unordered list are styled using a class called
+        "description-list-style", and is styled in the external stylesheet. 
+      -->
+      <section>
+        <h3>Promises Made from the Canadian Side</h3>
+        <p>
+          Many promises were made during the Treaty signing process from the
+          Canadian side. These include:
+        </p>
+        <ul>
+          <li class="description-list-style">
+            Each band was to receive a reserve large enough to provide 160 acres
+            for each family of five.
+          </li>
+          <li class="description-list-style">
+            Each man, woman and child were to be given a gratuity (one time
+            payment) of three dollars.
+          </li>
+          <li class="description-list-style">
+            Each family were to be given a yearly annuity of $15 per a family of
+            five
+          </li>
+          <li class="description-list-style">
+            Government agreed to maintain a school on each reserve and to
+            prohibit the introduction of selling liquor on each reserve
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Promises Made From the Side of the First Nations</h3>
+        <p>
+          First Nations, as written in the text, were to “cede, release,
+          surrender and yield to her Majesty Queen” an area of land described in
+          the treaty. The land described is present-day southeast and
+          south-central Manitoba, including the Red River Valley, and stretching
+          north to the lower parts of Lake Manitoba and Lake Winnipeg and west
+          along the Assiniboine River to the towns of Portage la Prairie and
+          Brandon.
+        </p>
+      </section>
+
+      <!--
+        An image to support the information written above.
+
+        The image is contained in the <figure> sematic tag with a <figcaption> inside it.
+        The image has alt text to describe what the image is about to improve accessibility. 
+      -->
+      <figure>
+        <img
+          src="images/treaty-signing-celebration.webp"
+          width="100%"
+          height="6%"
+          alt="A photo of two pairs of hands. One of the hands is holding a pen and is signing
+            a large white, while the other hnads hold the banner flat on the table. The table is 
+            adorned with a bright red tablecloth that has bright pink flowers on it. The table has 
+            lots of colorful strings, banners, flags, blankets and cloths on it. All the materials on the 
+            table are red, blue, yellow, black, green and white.
+            Photo Credit: CBC."
+          class="side-image" />
+        <figcaption>
+          <p>
+            <b>Fig.1</b> Members of Nations of Treaty One sign flags retrieved
+            from a time capsule at the 150th anniversary of the signing of the
+            treaty.
+          </p>
+        </figcaption>
+      </figure>
+
+      <section>
+        <h3>The Promises Made Outside the Treaty</h3>
+        <p>
+          Many promises were made outside of the Treaty-signing process. These
+          include, but are not limited to:
+        </p>
+        <ul>
+          <li class="description-list-style">A buggy for each chief</li>
+          <li class="description-list-style">
+            A buggy for the braves and councilors of each Chief
+          </li>
+          <li class="description-list-style">
+            A bull and a cow for each Chief
+          </li>
+          <li class="description-list-style">A boar for each reserve</li>
+          <li class="description-list-style">
+            A sow for each chief, both a female and a male raised by farmers
+          </li>
+          <li class="description-list-style">
+            A plough and harrow for each settler cultivating the ground
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!--
+      The footer of the website containing source information and copyright information.
+      The source information is contained in a <section> tag. 
+      The source information is styled using a "source-link" class that is styled
+      in the external stylesheet. 
+     -->
+    <footer>
+      <section>
+        <h3>Sources:</h3>
+        <ul>
+          <li>
+            <a href="https://treaty1.ca/" target="blank" class="source-link">
+              Treaty One Website
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.canada.ca/en/parks-canada/news/2021/08/treaty-one-nation-and-government-of-canada-commemorate-150th-anniversary-of-treaty-no-1.html"
+              target="blank"
+              class="source-link">
+                Government of Canada Treaty One Anniversary Webpage
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <br />
+
+      <p>&#169; 2022 Daria P</p>
+    </footer>
+  </body>
+</html>

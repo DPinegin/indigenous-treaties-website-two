@@ -1,0 +1,246 @@
+/* 
+  The color families that I have chosen are red and cyan (blue or light-blue). I chose 
+  those color families because they are complementary colors on the color wheel.
+
+  I feel that red represent the client's purpose bacause red catches a user's attention,
+  and is associated with energy and action. In addition, in the Indigenous medicine wheel,
+  red represnts the south (which is where Treaty One is located; the south). In many Indigenous and
+  Native-American cultures children are dressed in red during ceremonies and traditions as an 
+  introduction to their ancestors and a call upon the guardians to guard their children. 
+  In Native American cultures red represents the Earth-element and is 
+  why many tribes paint their bodies and faces with red. Due to this webiste's purpose 
+  to inform about Treaty One and honor the Indigenous and Native-American cultures, I felt 
+  that red was a perfect match for this. 
+
+  The second color that I chose was cyan (or light-blue). Blue represnts stability,
+  harmony, peace and calm, which was the purpose the treaties were made with(so both 
+  Indigenous Peoples and Europeans could live together in harmony). Blue is also tied closely
+  with the sky, and many Indigenous and Native-American cultures use blue as a representation of 
+  Father Sky. In addition, Blue relates to water, representing the famous sentence that was said 
+  during the negotiations for Treaty One, stating that Treaty One would be in place 
+  “...as long as the sun shines, the grass grows and the river flows...”. 
+  It is also important to understand that blue is the color of the Métis flag, and the 
+  land where Treaty One is located is the nation's traditional land.
+  Considering that this website is meant to inform people about Treaty One and respect the traditional
+  cultures that negotiated the treaty, I decided to use the color cyan (light-blue) as a color on 
+  my website to balance the red. 
+
+  I used a serif font because the website's purpose is to inform people, and by using 
+  a serif font the webiste will come across as trustworthy, established and reliable (because
+  people come to this website to be informed about the treaties). 
+
+  Sources:
+  https://www.bergerpaints.com/imaginecolours/colour-culture/colours-and-native-american-culture
+  https://www.aboriginalartuk.com/post/2017/11/21/aboriginal-culture-scared-colours
+
+  https://www.canada.ca/en/parks-canada/news/2021/08/treaty-one-nation-and-government-of-canada-commemorate-150th-anniversary-of-treaty-no-1.html
+  https://ecampusontario.pressbooks.pub/movementtowardsreconciliation/chapter/the-medicine-wheel-teachings/
+  https://easternwoodlandmetisnation.ca/the-metis-flag/#:~:text=The%20flag%20symbolizes%20the%20creation,Metis%20people%20will%20exist%20forever.
+
+
+*/
+/* 
+  The following will style all elements on the webpage to have:
+  - A line-height of 180% of the font-size. 
+  - A space between words the size of 2.5 pixels.
+  - A space between letters of 0.2 pixels. 
+*/
+* {
+  line-height: 180%;
+  word-spacing: 2.5px;
+  letter-spacing: 0.2px;
+}
+/* 
+  The following will style the HTML element (the root element) to have:
+  - a default font-size of 100% of the browser's default font-size. 
+*/
+html {
+  font-size: 100%;
+}
+
+/* 
+  The following will style the body element to have:
+  - the font size of 1.6 times the root element's font size
+  - To have a background color of #fbfbfe, which is an off-white
+  - To have a margin (space around the element's border, this time the body element's border)
+    of 20 pixels on the top and bottom and 5 pixels on the right and left.
+*/
+body {
+  font-size: 1.6rem;
+  background-color: #fbfbfe;
+  margin: 20px, 5px;
+}
+/* 
+  The following will style the <nav> element to have:
+  - a background color of #c4f9f3, which is a tint of cyan. 
+*/
+nav {
+  background-color: #c4f9f3;
+}
+/* 
+  The following will style the unordered list inside the <nav> element to have:
+  - A margin (space around the element's border) to be 20 pixles on both top, right, bottom, and left sides.
+  - A padding (space between the inner content and the edges of the content) to be 0 pixels. 
+  - To have a font-size of 2.4 times the root-elements default font size.
+  - To use the font "Times-New-Roman" before using the font "Times". If neither fonts
+    are available, to use the default serif font on the browser. 
+  - To have a font-weight (the thickness of the font's strokes/lines) of bold (value of 700).
+  - To have a font-color of #323140, which is a very dark-grey with a hint of blue.
+  - To have no bullet-points for each list-item. 
+*/
+nav ul {
+  margin: 20px;
+  padding: 0;
+  font-size: 2.4rem;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: #323140;
+  list-style: none;
+}
+/* 
+  The following styles all the list items to have the following:
+  - To diplay each list-item as inline block, meaning they will be displayed beside each-other.
+*/
+nav li {
+  display: inline-block;
+}
+/* 
+  The following will style all the <a> anchors in the <nav> element to have the following:
+  - To dipslay each anchor as inline block, meaning they will be displayed beside each-other.
+  - To have the height to be 100% (the height of the content is 100% of the the parent element).
+  - To have a padding (space between the inner content and the edges of the content) to be 25 pixels
+    on the top and bottom, and to be 30 pixels on the left and right.
+  - To have a font color of #323140, which is a dark-grey with a hint of blue.
+  - To not have an underline under the element.
+*/
+nav a {
+  display: inline-block;
+  height: 100%;
+
+  padding: 25px 30px;
+
+  color: #323140;
+
+  text-decoration: none;
+}
+/* 
+  The following styles the <anchor> element in the <nav> element to do the following when a user 
+  hovers or clicks the link:
+  - Have a backrgound color of #323140, which is a dark-grey with a hint of blue.
+  - To have a font color of #e1fbff, which is a tint of cyan. 
+
+  This means that the backrgound color and the font color will swap-out, except the font-color
+  will be lighter than the background color of the <nav> for better contrast. 
+*/
+nav a:hover,
+nav a:focus {
+  background-color: #323140;
+  color: #e1fbff;
+}
+/* 
+  The following will style the <h1> (main heading) to have the folowing:
+  - To have a font-size of 6.5 times the root-elements default font size.
+  - To have a font color of #b20101, which is a red.
+  - To align the text to the heading to the center of the web-page.
+*/
+h1 {
+  font-size: 6.5rem;
+  color: #b20101;
+  text-align: center;
+}
+/* 
+  The following will style the <h2> (second largest haeding) to have the following:
+  - To have a font-size of 5.5 times the root-elements default font size.
+  - To have a font color of #9d0101, which is a darker red than the red of the <h1>.
+  - To dipslay each heading as inline block, meaning they will be displayed beside other elements.
+  - To have a width of 40% of the element's content area.
+  - To have a margin (space around the element's border)
+    of 0 pixels on the top and bottom and 40 pixels on the right and left.
+*/
+h2 {
+  font-size: 5.5rem;
+  color: #9d0101;
+
+  display: inline-block;
+  width: 40%;
+
+  margin: 0px 40px;
+}
+/* 
+  The following styles the <p> elements in a <figcaption> element to have the following:
+  - To have a font-size of 2 times the root-elements default font size.
+  - To have a line-height of 25 pixels.
+  - To use the font "Times-New-Roman" before using the font "Times". If neither fonts
+    are available, to use the default serif font on the browser. 
+  - To have a margin (space around the element's border) at the bottom of the element 
+    to be 40 pixels. 
+*/
+
+figcaption p {
+  font-size: 2rem;
+  line-height: 25px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 40px;
+}
+/* 
+  The following will style the <h3> element to have the following:
+  - A font-size of 4.2 times the root-elements default font size.
+  - To have a font-weight (the thickness of the font's strokes/lines) of bold (value of 700).
+  - To have a margin (space around the element's border) to be 1% of the webpage's size.
+  - To have a font color of #9d0101, which is a darker red than the red of the <h1>.
+*/
+h3 {
+  font-size: 4.2rem;
+  font-weight: bold;
+  margin: 1%;
+  color: #9d0101;
+}
+/* 
+  The following will style the <p> element to have the following:
+  - A font-size of 2.5 times the root-elements default font size.
+  - To use the font "Times-New-Roman" before using the font "Times". If neither fonts
+    are available, to use the default serif font on the browser.
+  - To have a font-color of #323140, which is a dark-grey with a tint of blue.
+  - To have a margin (space around the element's border) to be 1.5% of the webpage.
+*/
+p {
+  font-size: 2.5rem;
+  font-family: "Times New Roman", Times, serif;
+  color: #323140;
+  margin: 1.5%;
+}
+/* 
+  The following will style the <section> element to have the following:
+  - A background color of #f0f0f0, which is a light gray.
+  - To be 95% of the width of the web-page.
+  - To have a height of auto, which means that the height will automatically adjust it's height 
+    to the height of the content so it can be displayed correctly.
+  - To have a padding (space between the inner content and the edges of the content) of 25 pixels
+    on the top, bottom, left and right.
+  - To have a margin (space around the element's border) to be 50 pixels.
+*/
+section {
+  background-color: #f0f0f0;
+  width: 95%;
+  height: auto;
+  padding: 25px;
+  margin: 50px;
+}
+/* 
+  The following styles all elements that are part of the class called "description-list-style" to have:
+  - A margin (space around the element's border) to be 2% of the webpage.
+  - A font-size of 2.5 times the root-elements default font size.
+*/
+.description-list-style {
+  margin: 2%;
+  font-size: 2.5rem;
+}
+/* 
+  The following styles all elements that are part of the class called "source-link" to have:
+  - To have no bullet-points for each list-item. 
+  - A font-size of 2.5 times the root-elements default font size.
+*/
+.source-link {
+  list-style: none;
+  font-size: 2.5rem;
+}
